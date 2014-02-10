@@ -16,6 +16,7 @@
 
 package com.android.settings.cyanogenmod;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -24,6 +25,7 @@ import android.os.SystemService;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.provider.Settings;
 import android.util.Log;
 
 import com.android.settings.R;
@@ -317,6 +319,10 @@ public class Processor extends SettingsPreferenceFragment implements
 
                 if (preference == mGovernorPref) {
                     mGovernorPref.setSummary(String.format(mGovernorFormat, newValue));
+				// We need update value
+                    if (Settings.System.getInt(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU, 1) != 0) {
+                        Settings.System.putString(getActivity().getContentResolver(), Settings.System.POWER_SAVER_CPU_DEFAULT, (String) newValue);
+                    }
                 } else if (preference == mMinFrequencyPref) {
                     mMinFrequencyPref.setSummary(String.format(mMinFrequencyFormat,
                             toMHz(newValue)));
