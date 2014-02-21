@@ -82,6 +82,14 @@
 
     <declare-styleable name="ImageListPreference">
         <attr name="entryImages" format="reference" />
+    <declare-styleable name="SeekBarPreferenceChOS">
+	<attr name="minAD" format="integer" />
+	<attr name="maximum" format="integer" />
+	<attr name="minimum" format="integer" />
+	<attr name="smin" format="integer" />
+	<attr name="unitsLeft" format="string|reference" />
+	<attr name="unitsRight" format="string|reference" />
+	<attr name="interval" format="integer" />
     </declare-styleable>
 
 </resources>
