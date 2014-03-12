@@ -933,7 +933,7 @@
     <string name="battery_saver_action_undefined">Undefined</string>
     <string name="battery_saver_title">Battery saver mode</string>
     <string name="pref_battery_saver_enable_title">Battery saver</string>
-    <string name="pref_battery_saver_enable_summary">This will automatically switch your network to user-defined power saving mode or normal mode depending on mobile data and WiFi connection states</string>
+    <string name="pref_battery_saver_enable_summary">This will automatically manage your device battery usage and switch your network to user-defined power saving mode or normal mode depending on mobile data and Wi-Fi connection states</string>
     <string name="pref_battery_saver_normal_mode_title">Normal network mode</string>
     <string name="pref_battery_saver_power_saving_mode_title">Power saving network mode</string>
     <string name="pref_battery_saver_screen_off_title">When screen turns off</string>
@@ -951,4 +951,61 @@
     <string name="pref_battery_saver_enable_no_mobiledata_summary">This will automatically manage your device battery usage to user-defined</string>
     <string name="pref_battery_saver_wifi_title">Disable WiFi</string>
     <string name="pref_battery_saver_wifi_summary">Disable wifi connection when power saving activated</string>
+    <string name="pref_battery_saver_wifi_title">Disable Wi-Fi</string>
+    <string name="pref_battery_saver_wifi_summary">Disable Wi-Fi connection when power saving activated</string>
+   <string name="pref_battery_saver_network_title">Smart network change</string>
+    <string name="pref_battery_saver_network_summary">Allow changing network to normal mode with specific interval time after screen turn off and power saving mode enabled</string>
+    <string name="pref_battery_saver_nosignal_title">Smart network signal</string>
+    <string name="pref_battery_saver_nosignal_summary">Activate Airplane mode when no network signal after 5 minutes</string>
+    <string name="pref_battery_saver_toast_title">Show toast</string>
+    <string name="pref_battery_saver_toast_summary">Allow to showing toast message when battery saver changing device configuration</string>
+    <string name="battery_saver_battery_title">Battery options</string>
+    <string name="battery_saver_radio_title">Radio options</string>
+    <string name="battery_saver_network_title">Other Network options</string>
+    <string name="battery_saver_network_gsm_title">GSM Networks</string>
+    <string name="battery_saver_network_cdma_title">CDMA Networks</string>
+    <string name="battery_saver_system_title">System options</string>
+
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Toast Animation</string>
+    <string name="toast_none_animation">None</string>
+    <string name="toast_default_animation">Default</string>
+    <string name="toast_fade_animation">Fade Animation</string>
+    <string name="toast_SlideRight_animation">SlideRight Animation</string>
+    <string name="toast_SlideLeft_animation">SlideLeft Animation</string>
+    <string name="toast_Xylon_animation">Xylon Animation</string>
+    <string name="toast_Toko_animation">Toko Animation</string>
+    <string name="toast_Tn_animation">Tn Animation</string>
+    <string name="toast_Honami_animation">Honami Animation</string>
+    <string name="toast_FastFade_animation">FastFade Animation</string>
+    <string name="toast_GrowFade_animation">GrowFade Animation</string>
+    <string name="toast_GrowFadeCenter_animation">GrowFadeCenter Animation</string>
+    <string name="toast_GrowFadeBottom_animation">GrowFadeBottom Animation</string>
+    <string name="toast_Translucent_animation">Translucent Animation</string>
+    <string name="toast_SlideLeftRight_animation">Slide Left To Right Animation</string>
+    <string name="toast_SlideRightLeft_animation">Slide Right To Left Animation</string>
+
+    <!-- GPS Settings -->
+    <string name="aosb_gps_settings_title">GPS Optimizer</string>
+    <string name="aosb_gps_settings_summary">Modify gps.conf to specific country</string>
+
+    <!-- Custom Recent Settings -->
+    <string name="custom_recent_title">Enable Slim Recents</string>
+    <string name="custom_recent_summary">Tick this box to switch between Slim/AOSB RecentApps</string>
+
+    <!-- Kernel Tweaker -->
+    <string name="kernel_tweaker_title">Kernel Tweaker</string>
+
+    <!-- Notification Drawer - Swipe to Switch full screen detection-->
+    <string name="title_full_screen_swipe">Swipe-to-Switch detection</string>
+    <string name="summary_full_screen_swipe">Use full screen detection for swipe to switch, not just the bottom bar</string>
+
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Breathing Notifications</string>
+    <string name="sms_breath">Breathing SMS</string>
+    <string name="sms_breath_summary">Will give your sms notifications a breathing effect in the statusbar</string>
+    <string name="title_missed_call_breath">Breathing Missed Call</string>
+    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
+    <string name="title_voicemail_breath">Breathing Voicemail</string>
+    <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
 </resources>
