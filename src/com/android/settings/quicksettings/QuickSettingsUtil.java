@@ -55,6 +55,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_WIFI;
 import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_POWER;
 import static com.android.internal.util.cm.QSConstants.TILE_ONTHEGO;
+import static com.android.internal.util.cm.QSConstants.TILE_APPCIRCLEBAR;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -185,6 +186,9 @@ public class QuickSettingsUtil {
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_QUICKRECORD, R.string.title_tile_quick_record,
                 "com.android.systemui:drawable/ic_qs_quickrecord"));
+        registerTile(new QuickSettingsUtil.TileInfo(
+                TILE_APPCIRCLEBAR, R.string.title_tile_appcirclebar,
+                "com.android.systemui:drawable/ic_qs_appcirclebar_on"));
         registerTile(new QuickSettingsUtil.TileInfo(
                 TILE_NAVBAR, R.string.title_navbar_tile,
                 "com.android.systemui:drawable/ic_qs_navbar_on"));
