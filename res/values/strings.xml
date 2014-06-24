@@ -243,9 +243,9 @@
       Prevent use of the bluetooth dialer when the screen is locked
     </string>
     <!-- Bluetooth settings screen, heading above the list of nearby bluetooth devices -->
-    <string name="bluetooth_devices">Bluetooth devices</string>
+    <string name="bluetooth_devices">Bluetooth Devices</string>
     <!-- Bluetooth settings screen, title for the current bluetooth name setting -->
-    <string name="bluetooth_device_name">Device name</string>
+    <string name="bluetooth_device_name">Device Name</string>
     <!-- Bluetooth settings screen, image description for device details button. This opens the screen to rename, unpair, etc. a single device. -->
     <string name="bluetooth_device_details">Device settings</string>
     <!-- Bluetooth settings screen, image description for profile of a device details button. -->
@@ -826,14 +826,14 @@
 
     <!-- Security Picker --><skip />
     <!--  Title for security picker to choose the unlock method: None/Pattern/PIN/Password [CHAR LIMIT=22] -->
-    <string name="lock_settings_picker_title">Choose screen lock</string>
+    <string name="lock_settings_picker_title">Choose Screen Lock</string>
 
     <!--  Title for security picker when choosing a facelock's backup unlock method: Pattern/PIN [CHAR LIMIT=22] -->
     <string name="backup_lock_settings_picker_title">Choose backup lock</string>
 
     <!--  Main Security lock settings --><skip />
     <!--  Title for PreferenceScreen to launch picker for security method when there is none [CHAR LIMIT=22] -->
-    <string name="unlock_set_unlock_launch_picker_title">Screen lock</string>
+    <string name="unlock_set_unlock_launch_picker_title">Screen Lock</string>
 
     <!--  Title for PreferenceScreen to change security method: None/Pattern/PIN/Password [CHAR LIMIT=22] -->
     <string name="unlock_set_unlock_launch_picker_change_title">Change lock screen</string>
@@ -3893,7 +3893,7 @@
     <string name="tts_general_section_title">General</string>
 
     <!-- Power Control Widget -->
-    <string name="gadget_title">Power control</string>
+    <string name="gadget_title">Power Control</string>
     <string name="gadget_toggle_wifi">Updating Wi\u2011Fi setting</string>
     <string name="gadget_toggle_bluetooth">Updating Bluetooth setting</string>
     <!-- Template for gadget toggle button description. Populated examples are "Wi-Fi off" or "Wi-Fi turning on". -->
@@ -3929,7 +3929,7 @@
     <string name="vpn_settings_title">VPN</string>
 
     <!-- Title of preference group for credential storage settings [CHAR LIMIT=30] -->
-    <string name="credentials_title">Credential storage</string>
+    <string name="credentials_title">Credential Storage</string>
     <!-- Title of preference to install certificates from SD card [CHAR LIMIT=30] -->
     <string name="credentials_install" product="nosdcard">Install from storage</string>
     <!-- Title of preference to install certificates from SD card [CHAR LIMIT=30] -->

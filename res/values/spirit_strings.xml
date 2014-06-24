@@ -38,7 +38,7 @@
     <string name="color_default">Default</string>
 
     <!-- Shortcut picker -->
-    <string name="use_custom_app_title">Use custom application</string>
+    <string name="use_custom_app_title">Use Custom Application</string>
     <string name="use_custom_app_summary">Use custom application instead of the recent applications dialog</string>
     <string name="select_custom_app_title">Select custom application</string>
     <string name="group_applications">Applications</string>
@@ -136,15 +136,15 @@
     <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>
 
     <!-- Themes -->
-    <string name="theme_settings_title">Dark UI</string>
-    <string name="theme_auto_mode_title">Switch theme</string>
+    <string name="theme_settings_title">DARK SOKP</string>
+    <string name="theme_auto_mode_title">SWITCH DARK SOKP THEME</string>
     <string name="theme_auto_mode_off">Manual</string>
     <string name="theme_auto_mode_lightsensor">On light condition change</string>
     <string name="theme_auto_mode_twilight">On daytime</string>
     <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible.</string>
 
     <!-- Animation Controls -->
-    <string name="title_animation_controls">Custom system animations</string>
+    <string name="title_animation_controls">Custom System Animations</string>
     <string name="activity_open_title">Activity open animation</string>
     <string name="activity_close_title">Activity close animation</string>
     <string name="task_open_title">Task open animation</string>
@@ -163,7 +163,7 @@
     <string name="animation_reverse_exit_title">Reverse exit animation</string>
 
     <!-- ListView animation -->
-    <string name="interface_settings_animation_title">Animation options</string>
+    <string name="interface_settings_animation_title">Animation Options</string>
     <string name="listview_animation_title">ListView animation</string>
     <string name="listview_off">Default</string>
     <string name="listview_wave_left">Wave (left)</string>
@@ -178,7 +178,7 @@
     <string name="listview_translate_right">Translate (right)</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">ListView interpolator</string>
+    <string name="listview_interpolator_title">ListView Interpolator</string>
     <string name="listview_accelerate_interpolator">Accelerate</string>
     <string name="listview_decelerate_interpolator">Decelerate</string>
     <string name="listview_accelerate_decelerate_interpolator">Accelerate and decelerate</string>
@@ -190,7 +190,7 @@
     <string name="listview_linear_interpolator">Linear</string>
 
     <!-- QuickSettings style options -->
-    <string name="quicksettings_tiles_style">Quick Settings style</string>
+    <string name="quicksettings_tiles_style">Quick Settings Style</string>
     <string name="summary_quicksettings_tiles_style">Show or change Quick Settings style options</string>
     <string name="quicksettings_tiles_style_additional_options">Additional options</string>
     <string name="tiles_per_row_title">Tiles per row</string>
@@ -202,11 +202,11 @@
     <string name="quick_tiles_custom_color_title">Allow custom colors</string>
 
     <!-- QuickSettings fliptiles -->
-    <string name="flip_qs_tiles_title">Flip tiles</string>
+    <string name="flip_qs_tiles_title">Flip Tiles</string>
     <string name="flip_qs_tiles_summary">Flips the tiles on touch</string>
 
     <!-- Display : Animation options -->
-    <string name="display_category_animation_options_title">Animation options</string>
+    <string name="display_category_animation_options_title">Animation Options</string>
     <string name="system_power_crt_mode_title">CRT animation </string>
     <string name="system_power_crt_mode_dialog_title">CRT animation</string>
     <string name="system_power_crt_mode_off">Don\'t show</string>
@@ -241,7 +241,7 @@
     <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss.</string>
 
    <!-- Smooth ProgressBar -->
-    <string name="progressbar_title">Custom ProgressBar</string>
+    <string name="progressbar_title">Custom Progress Bar</string>
     <string name="progressbar_mirror_title">Mirror Mode</string>
     <string name="progressbar_reverse_title">Reversed</string>
     <string name="progressbar_speed_title">Speed</string>
@@ -275,7 +275,7 @@
     <string name="toast_SlideRightLeft_animation">Slide Right To Left Animation</string>
 
     <!-- Active display settings -->
-    <string name="ad_settings_title">Active display</string>
+    <string name="ad_settings_title">Active Display</string>
     <string name="ad_settings_summary">Change active display settings</string>
     <string name="ad_enable_title">Enable</string>
     <string name="ad_enable_summary_on">Active display enabled</string>
@@ -340,12 +340,12 @@
     <string name="ad_pocket_mode_always">Always</string>
 
     <!-- Lockscreen camera widget toggle -->
-    <string name="disable_camera_widget_title">Enable camera widget</string>
+    <string name="disable_camera_widget_title">Enable Camera Widget</string>
     <string name="disable_camera_widget_summary">Allow the lockscreen camera widget</string>
 
     <!-- Nav Ring Targets -->
     <!-- Navbar targets -->
-    <string name="enable_navigation_bar_title">Enable navigation bar</string>
+    <string name="enable_navigation_bar_title">Enable Navigation Bar</string>
     <string name="enable_navigation_bar_summary">Enable the on-screen navigation bar</string>
     <string name="category_navring">Navigation ring</string>
     <string name="navbar_ring_cat">Navigation ring Targets</string>
@@ -408,7 +408,7 @@
     <string name="size_42_dp">42 dp</string>
 
     <!-- Volume steps -->
-    <string name="volume_steps_title">Volume steps</string>
+    <string name="volume_steps_title">Volume Steps</string>
     <string name="volume_steps_summary">Fine grained control of volume for specified sound streams</string>
 
     <!-- Menu items for Ribbons -->
@@ -464,7 +464,7 @@
     <string name="recents_use_slim_summary">Use Slim Recents instead of default recents view</string>
 
     <!-- Recent panel -->
-    <string name="recent_panel_category">Recent apps panel</string>
+    <string name="recent_panel_category">Recent Apps Panel</string>
     <string name="recent_panel_scale_title">Size</string>
     <string name="recent_panel_scale_summary">Recent apps panel size in percent.</string>
     <string name="recent_panel_100">100% (default)</string>
@@ -490,7 +490,7 @@
     <string name="title_tile_onthego">On-The-Go</string>
 
     <!-- Keyboard and Input ASS methods  -->
-    <string name="title_keyboard_input">Advanced options</string>
+    <string name="title_keyboard_input">Advanced Options</string>
     <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
     <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
     <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
@@ -502,7 +502,7 @@
     <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
 
     <!-- Partition Info -->
-    <string name="partition_info_title">Partition info</string>
+    <string name="partition_info_title">Partition Info</string>
     <string name="partition_info_system">/system</string>
     <string name="partition_info_data">/data</string>
     <string name="partition_info_cache">/cache</string>
@@ -511,7 +511,7 @@
     <string name="partition_info_used_of">/</string>
 
     <!-- Button shorcut actions -->
-    <string name="shortcut_action_app">Custom app</string>
+    <string name="shortcut_action_app">Custom App</string>
     <string name="shortcut_action_home">Home</string>
     <string name="shortcut_action_back">Back</string>
     <string name="shortcut_action_recent">Recents</string>
@@ -541,7 +541,7 @@
     <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
     <string name="shortcut_duplicate_entry">The chosen action cannot be added twice</string>
 
-    <string name="shortcut_action_help_shortcut">shortcut</string>
+    <string name="shortcut_action_help_shortcut">Shortcut</string>
     <string name="shortcut_action_help_button">button</string>
     <string name="shortcut_action_help_icon">, while selecting the icon will bring up customization options</string>
     <string name="shortcut_action_help_main">To add a %1$s, select the Add icon. Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right. Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
@@ -620,7 +620,7 @@
 
     <!-- Notification drawer settings -->
     <string name="notification_hide_carrier_title">Hide carrier label</string>
-    <string name="notification_shortcuts_settings_title">Shortcuts</string>
+    <string name="notification_shortcuts_settings_title">Notification Shortcuts</string>
     <string name="notification_shortcuts_settings_summary">Show shortcuts in the notification drawer</string>
 
     <!-- Custom Carrier Label Options -->
@@ -800,7 +800,7 @@
     <string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
 
     <!-- StatusBar Battery Settings -->
-    <string name="battery_icon_title">Battery icon</string>
+    <string name="battery_icon_title">Battery Icon</string>
     <string name="battery_status_icon">Icon</string>
     <string name="battery_status_percentage">Percentage</string>
     <string name="battery_status_icon_percentage">Icon with percentage</string>
@@ -856,7 +856,7 @@
     <string name="lockscreen_glowpad_doubletap_torch">Torch</string>
 
     <!-- Notification Reminders -->
-    <string name="noti_reminder_category">Notification reminder</string>
+    <string name="noti_reminder_category">Notification Reminder</string>
     <string name="noti_reminder_enable_title">Enable notification reminder</string>
     <string name="noti_reminder_sound_title">Notify sound</string>
     <string name="noti_reminder_sound_looping">Until dismissed</string>
@@ -873,9 +873,9 @@
     <!-- Lockscreen style settings -->
     <string name="lockscreen_style_reset_message">Reset all lockscreen colors?</string>
     <string name="lockscreen_icon_title">Lock handle icon</string>
-    <string name="lockscreen_lock_icon_custom">Custom icon</string>
-    <string name="lockscreen_lock_icon_spirit">Spirit icon</string>
-    <string name="lockscreen_lock_icon_default">Default icon</string>
+    <string name="lockscreen_lock_icon_custom">CUSTOM ICON</string>
+    <string name="lockscreen_lock_icon_spirit">SOKP ICON</string>
+    <string name="lockscreen_lock_icon_default">DEFAULT ICON</string>
     <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
     <string name="lockscreen_colorize_handle_summary">Lock color will be set to the lock handle</string>
     <string name="lockscreen_style_title">Theme style</string>
@@ -945,14 +945,14 @@
     <string name="app_halo_label_white">Whitelist from Halo</string>
 
     <!-- Circle App Launcher -->
-    <string name="category_app_circle_bar_title">App launcher</string>
+    <string name="category_app_circle_bar_title">App Launcher</string>
     <string name="app_circle_bar_title">App circle bar</string>
     <string name="app_circle_bar_summary">Show circle app launcher after touching right side of screen</string>
     <string name="app_circle_bar_included_apps_title">Included apps</string>
     <string name="app_circle_bar_included_apps_summary">Apps will show in app circle bar</string>
 
     <!-- Quicksettings panel floating window -->
-    <string name="title_floating_window">Floating window</string>
+    <string name="title_floating_window">Floating Window</string>
     <string name="summary_floating_window">Open Quick Settings tiles in floating window</string>
 
     <!-- Lockscreen Notifications -->
@@ -960,7 +960,7 @@
     <string name="layout">Layout</string>
     <string name="privacy">Privacy</string>
     <string name="Lockscreen_notifications_header">Lockscreen Notifications</string>
-    <string name="lockscreen_notifications">Lockscreen notifications</string>
+    <string name="lockscreen_notifications">Lockscreen Notifications</string>
     <string name="lockscreen_notifications_summary">Show pending notifications on lockscreen</string>
     <string name="pocket_mode">Pocket mode</string>
     <string name="pocket_mode_summary">Turn screen on and show all notifications when device is pulled out of pocket. Turn screen off when device gets back into pocket.</string>
@@ -1134,13 +1134,13 @@
     <string name="clock_font_normal">Normal</string>
 
     <!-- Performance control -->
-    <string name="performance_settings">Performance control</string>
+    <string name="performance_settings">Performance Control</string>
 
     <!-- Navbar Toggle QS -->
-    <string name="title_navbar_tile">Navbar toggle</string>
+    <string name="title_navbar_tile">Navbar Toggle</string>
 
     <!-- Sound themes -->
-    <string name="sound_packages_title">Sound packs</string>
+    <string name="sound_packages_title">Sound Packs</string>
     <string name="install_sound_pack_title">Install sound pack</string>
     <string name="install_sound_pack_summary">Install new sound packs added in SoundPacks folder on the internal storage</string>
     <string name="select_sound_pack_title">Select sound pack</string>
@@ -1152,7 +1152,7 @@
     <string name="misc_title">Misc</string>
 
     <!-- Force fast charge -->
-    <string name="pref_force_fast_charge_title">Force fast charge</string>
+    <string name="pref_force_fast_charge_title">Force Fast Charge</string>
 
     <!-- SlimSizer  -->
     <string name="listsystem">list</string>

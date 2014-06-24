@@ -28,21 +28,15 @@
             android:title="@string/accessibility_system_title">
 
         <PreferenceScreen
-            android:key="interface_voice_tts"
-            android:title="@string/voice_tts_title"
-            android:summary="@string/voice_tts_summary"
-            android:fragment="com.android.settings.spirit.TtsNotification" />
-
-        <PreferenceScreen
             android:fragment="com.android.settings.accessibility.CaptionPropertiesFragment"
             android:key="captioning_preference_screen"
             android:title="@string/accessibility_captioning_title" />
 
-        <PreferenceScreen
+		<PreferenceScreen
             android:fragment="com.android.settings.accessibility.ToggleScreenMagnificationPreferenceFragment"
             android:key="screen_magnification_preference_screen"
-            android:title="@string/accessibility_screen_magnification_title"/>
-
+            android:title="@string/accessibility_screen_magnification_title"/>	
+			
         <CheckBoxPreference
                 android:key="toggle_large_text_preference"
                 android:title="@string/accessibility_toggle_large_text_preference_title"

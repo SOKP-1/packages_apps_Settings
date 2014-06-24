@@ -39,9 +39,9 @@
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Set encryption password</string>
 
-    <string name="lock_screen_title">Lock screen</string>
+    <string name="lock_screen_title">Lock Screen</string>
 
-    <string name="increasing_ring_title">Ascending ringtone</string>
+    <string name="increasing_ring_title">Ascending Ringtone</string>
     <!-- Sound settings screen, the caption of the checkbox for making incoming calls increase in volume -->
     <string name="checkbox_increasing_ring">Enable</string>
     <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
@@ -136,7 +136,7 @@
     <string name="soundtone_summary" translatable="false">""</string>
 
     <!-- Title for application group setting screen -->
-    <string name="profile_appgroups_title">App groups</string>
+    <string name="profile_appgroups_title">App Groups</string>
     <string name="profile_applist_title">Apps</string>
     <string name="profile_new_appgroup">New app group</string>
     <string name="profile_delete_appgroup">Delete this app group?</string>
@@ -147,7 +147,7 @@
     <string name="profile_choose_app">Choose app</string>
 
     <!-- Profiles - system settings -->
-    <string name="profile_system_settings_title">System settings</string>
+    <string name="profile_system_settings_title">System Settings</string>
     <string name="profile_lockmode_title">Lock screen mode</string>
     <string name="profile_lockmode_default">Default</string>
     <string name="profile_lockmode_insecure">Insecure</string>
@@ -189,7 +189,7 @@
     <string name="volume_steps_5">5</string>
 
     <!-- Volume panel style -->
-    <string name="volume_overlay_title">Volume panel style</string>
+    <string name="volume_overlay_title">Volume Panel Style</string>
     <string name="volume_overlay_single">Single</string>
     <string name="volume_overlay_expandable">Expandable</string>
     <string name="volume_overlay_expanded">Expanded</string>
@@ -231,7 +231,7 @@
     <string name="notification_light_voicemail_title">Voicemail</string>
 
     <!-- Backlight brightness settings screen -->
-    <string name="adaptive_backlight_title">Adaptive backlight</string>
+    <string name="adaptive_backlight_title">Adaptive Backlight</string>
     <string name="adaptive_backlight_summary">Dynamically adjust the brightness of the display\'s backlight to maximize battery life while maintaining usability</string>
 
     <!-- Turn on display when power connected; turn off display when power disconnected -->
@@ -260,7 +260,7 @@
     <string name="pulse_speed_very_slow">Very slow</string>
 
     <!-- Battery light settings -->
-    <string name="battery_light_title">Battery light</string>
+    <string name="battery_light_title">Battery Light</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_list_title">Colors</string>
     <string name="battery_light_low_color_title">Battery low</string>
@@ -279,7 +279,7 @@
     <string name="lockpattern_settings_enable_dots_title">Show pattern dots</string>
 
     <!-- Screen security -->
-    <string name="screen_security_category">Screen security</string>
+    <string name="screen_security_category">Screen Security</string>
     <string name="screen_security_summary">View or change lock screen security settings</string>
     <string name="unlock_menu_unlock_title">Menu unlock</string>
     <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
@@ -305,19 +305,19 @@
     <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities.</string>
 
     <!-- Quick settings panel  -->
-    <string name="quick_settings_panel_title">Quick Settings panel</string>
+    <string name="quick_settings_panel_title">Quick Settings Panel</string>
     <string name="title_static_tiles">Static tiles</string>
     <string name="tile_picker_title">Tiles and layout</string>
     <string name="tile_picker_summary">View, select or change the layout of the displayed tiles</string>
     <string name="tile_choose_title">Choose a tile</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Heads up</string>
+    <string name="category_heads_up">Heads Up</string>
     <string name="title_heads_up_enabled">Enable heads up</string>
     <string name="add_heads_up_dnd_package">Add app to \'Do not disturb\'</string>
     <string name="heads_up_dnd_title">Do not disturb</string>
 
-    <string name="title_tile_airplane">Airplane mode</string>
+    <string name="title_tile_airplane">Airplane Mode</string>
     <string name="title_tile_battery">Battery stats</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Brightness</string>
@@ -349,7 +349,7 @@
     <string name="title_tile_theme">Theme switcher</string>
     <string name="title_tile_quick_record">Quick Record</string>
 
-    <string name="title_dynamic_tiles">Dynamic tiles</string>
+    <string name="title_dynamic_tiles">Dynamic Tiles</string>
     <string name="dynamic_tiles_note_title">Note</string>
     <string name="dynamic_tiles_note_summary">Dynamic tiles are not always visible and will only appear if triggered by a system event</string>
     <string name="title_dynamic_alarm">Alarm clock</string>
@@ -371,7 +371,7 @@
     <string name="title_collapse_panel">Auto close panel</string>
     <string name="summary_collapse_panel">Close the Quick Settings panel after toggling a tile</string>
 
-    <string name="pref_network_mode_title">Network modes</string>
+    <string name="pref_network_mode_title">Network Modes</string>
     <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_ring_mode_summary">View or change the Sound button modes</string>
@@ -385,7 +385,7 @@
     <string name="tiles_reset_message">Restore the default displayed tiles and layout?</string>
 
     <!-- Automatic brightness customization -->
-    <string name="auto_brightness_setup_title">Automatic brightness</string>
+    <string name="auto_brightness_setup_title">Automatic Brightness</string>
     <string name="auto_brightness_twilight_adjustment">Adjust to sunrise and sunset</string>
     <string name="light_sensor_current_value">Current light sensor value: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Automatic brightness levels</string>
@@ -433,7 +433,7 @@ desired screen brightness. Selecting \'Split\' allows you to to duplicate one li
 two in order to insert additional control points. \'Remove\' deletes the selected line.
     </string>
 
-    <string name="auto_brightness_sensitivity_title">Adjustment sensitivity</string>
+    <string name="auto_brightness_sensitivity_title">Adjustment Sensitivity</string>
     <string name="auto_brightness_sensitivity_verylow">Very low</string>
     <string name="auto_brightness_sensitivity_low">Low</string>
     <string name="auto_brightness_sensitivity_medium">Medium</string>
@@ -452,10 +452,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="display_rotation_270_title">270 degrees</string>
 
     <!-- Advanced reboot options -->
-    <string name="advanced_reboot_title">Advanced reboot</string>
+    <string name="advanced_reboot_title">Advanced Reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
 
-    <string name="app_security_title">App security</string>
+    <string name="app_security_title">App Security</string>
 
     <!-- Setting checkbox title for root access -->
     <string name="root_access">Root access</string>
@@ -471,7 +471,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="update_recovery_summary">Update recovery when installing system updates</string>
 
     <!-- Quiet hours -->
-    <string name="quiet_hours_title">Quiet hours</string>
+    <string name="quiet_hours_title">Quiet Hours</string>
     <string name="quiet_hours_summary">Configure the hours the device should be quiet</string>
     <string name="quiet_hours_enabled">Enforce quiet hours</string>
     <string name="quiet_hours_ringer">Phone ringer</string>
@@ -498,7 +498,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="end_time_title">End</string>
 
     <!-- About phone screen,  setting option name -->
-    <string name="mod_version">CyanogenMod version</string>
+    <string name="mod_version">SOKP VERSION</string>
     <string name="mod_version_default">Unknown</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Build date</string>
@@ -533,21 +533,21 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- INTERFACE Settings -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
-    <string name="header_category_interface">Personalization</string>
+    <string name="header_category_interface">SOKP</string>
 
     <!-- Themes Settings -->
     <!-- Settings main menu entry -->
     <string name="themes_settings_title">Themes</string>
 
     <!-- The following are entries under the themes menu -->
-    <string name="themepacks_settings_title">Theme packs</string>
+    <string name="themepacks_settings_title">Theme Packs</string>
     <string name="styles_settings_title">Styles</string>
     <string name="icons_settings_title">Icons</string>
     <string name="fonts_settings_title">Fonts</string>
     <string name="wallpaper_settings_title_cm">Wallpapers</string>
     <string name="lockscreen_wallpaper_settings_title">Lock screen wallpapers</string>
-    <string name="bootanim_settings_title">Boot animations</string>
-    <string name="soundpack_settings_title">Sound packs</string>
+    <string name="bootanim_settings_title">Boot Animations</string>
+    <string name="soundpack_settings_title">Sound Packs</string>
 
     <!-- Performance settings -->
     <string name="performance_settings_title">Performance</string>
@@ -565,7 +565,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="perf_profile_summary" translatable="false">%s</string>
 
     <!-- Memory Management -->
-    <string name="memory_management_title">Memory management</string>
+    <string name="memory_management_title">Memory Management</string>
     <!-- KSM -->
     <string name="pref_ksm_title">Kernel samepage merging</string>
     <string name="pref_ksm_summary">KSM reduces physical memory requirements and improves performance</string>
@@ -657,7 +657,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="select_contact">Select contact</string>
 
     <!-- Hardware tunables - Vibrator intensity -->
-    <string name="vibrator_intensity_title">Vibrator intensity</string>
+    <string name="vibrator_intensity_title">Vibrator Intensity</string>
     <string name="vibrator_warning">Values higher than %1$d are not recommended</string>
 
     <!-- Hardware tunables - Color calibration -->
@@ -677,7 +677,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="gamma_tuning_saturation">Saturation</string>
 
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_title">Launch Music App</string>
     <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
 
     <!-- Setting checkbox summary for displaying USB debugging notification -->
@@ -693,11 +693,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="device_hostname">Device hostname</string>
 
     <!-- System Interface settings  -->
-    <string name="system_settings_title">Interface</string>
+    <string name="system_settings_title">SOKP CONTROL</string>
     <string name="system_interface_title">System interface</string>
 
     <!-- Notification Drawer  -->
-    <string name="notification_drawer_title">Notification drawer</string>
+    <string name="notification_drawer_title">Notification Drawer</string>
     <string name="notification_drawer_collapse_on_dismiss_title">Auto close behavior</string>
     <string name="collapse_on_dismiss_never">Disabled</string>
     <string name="collapse_on_dismiss_if_empty">If none remaining</string>
@@ -707,10 +707,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="collapse_on_dismiss_if_no_clearable_summary">Close after removing the last removable notification</string>
 
     <!-- tap-to-wake -->
-    <string name="double_tap_to_wake_title">Double-tap to wake</string>
+    <string name="double_tap_to_wake_title">Double-tap to Wake</string>
 
     <!-- Quick access ribbon -->
-    <string name="category_quick_access">Quick Access ribbon</string>
+    <string name="category_quick_access">Quick Access Ribbon</string>
     <string name="title_quick_access">Show in drawer</string>
     <string name="title_quick_access_linked">Linked layout</string>
     <string name="summary_quick_access_linked">Use the same tiles and layout as the Quick Settings panel</string>
@@ -727,15 +727,15 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="sms_security_check_limit_none">None</string>
 
     <!-- Custom widgets -->
-    <string name="lockscreen_custom_widgets_title">Custom widgets</string>
+    <string name="lockscreen_custom_widgets_title">Custom Widgets</string>
 
     <!--- Lock clock -->
-    <string name="lock_clock_title">Clock widget</string>
+    <string name="lock_clock_title">Clock Widget</string>
     <string name="lock_clock_summary">Customize the default Lock and Home screen widget</string>
 
     <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
-    <string name="power_notifications_category_title">Charging sounds</string>
+    <string name="power_notifications_category_title">Charging Sounds</string>
 
     <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
     <string name="power_notifications_enable_title">Enable</string>
@@ -748,14 +748,14 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="power_notifications_ringtone_silent">Silent</string>
 
     <!-- Lock screen misc. settings -->
-    <string name="lockscreen_battery_status_title">Battery status</string>
+    <string name="lockscreen_battery_status_title">Battery Status</string>
     <string name="lockscreen_battery_status_charging">Only when charging</string>
     <string name="lockscreen_battery_status_alwayson">Always on</string>
     <string name="lockscreen_battery_status_alwaysoff">Always off</string>
 
     <!-- Lock Screen Shortcuts -->
     <string name="lockscreen_target_info">Drag the slider to targets to assign shortcuts</string>
-    <string name="lockscreen_target_title">Slider shortcuts</string>
+    <string name="lockscreen_target_title">Slider Shortcuts</string>
     <string name="lockscreen_target_summary">View or change custom lock screen shortcuts</string>
     <string name="lockscreen_target_reset">Lock screen shortcuts reset to default</string>
     <string name="lockscreen_target_reset_title">Reset</string>
@@ -794,7 +794,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="icon_picker_twitter">Twitter</string>
 
     <!-- Lock screen buttons -->
-    <string name="lockscreen_buttons_title">Button actions</string>
+    <string name="lockscreen_buttons_title">Button Actions</string>
     <string name="lockscreen_buttons_summary">View or change lock screen button actions</string>
     <string name="lockscreen_long_press_back_title">Long press Back button</string>
     <string name="lockscreen_long_press_home_title">Long press Home button</string>
@@ -809,7 +809,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="lockscreen_enable_modlock_title">Custom lock screen</string>
 
     <!-- Navigation Bar -->
-    <string name="navigation_bar_category">Navigation bar</string>
+    <string name="navigation_bar_category">Navigation Bar</string>
     <string name="navigation_bar_title">Buttons and layout</string>
     <string name="navigation_bar_left_title">Left-handed mode</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
@@ -823,7 +823,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="navigation_bar_menu_locked">Locked</string>
 
     <!-- Navigation ring shortcuts -->
-    <string name="navigation_ring_title">Quick launch shortcuts</string>
+    <string name="navigation_ring_title">Quick Launch Shortcuts</string>
     <string name="navring_target_reset_message">Delete all user created navigation bar shortcuts and restore to default?</string>
     <string name="navring_target_reset">Navigation bar shortcuts reset to default</string>
     <string name="navring_action_open_ime_switcher">Open IME Switcher</string>
@@ -839,7 +839,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="navring_choose_action_title">Choose action</string>
 
     <!-- Power menu enable disable -->
-    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_title">Power Menu</string>
     <string name="power_menu_reboot_title">Reboot menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_screenrecord_title">Screen record</string>
@@ -896,7 +896,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
     <!-- Hardware tunables - Key backlight -->
-    <string name="button_backlight_title">Backlight</string>
+    <string name="button_backlight_title">Back Light</string>
     <string name="button_backlight_enabled">Illuminate buttons</string>
     <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
     <string name="button_backlight_seekbar_title">Button brightness</string>
@@ -920,7 +920,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="confirm_delete_apn">The APN will be deleted.</string>
 
     <!-- Status bar -->
-    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_title">Status Bar</string>
     <string name="status_bar_general_title">General</string>
     <string name="status_bar_signal_text_title">Signal status style</string>
     <string name="status_bar_signal_style_icon">Icon</string>
@@ -934,11 +934,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
 
     <!-- Development shortcut -->
-    <string name="development_shortcut_title">Development shortcut</string>
+    <string name="development_shortcut_title">Development Shortcut</string>
     <string name="development_shortcut_summary">Enable \'wipe data\' and \'force close\' options in notification area and recent apps list</string>
 
     <!-- USB Mass Storage -->
-    <string name="usb_mass_storage_title">Mass storage (UMS)</string>
+    <string name="usb_mass_storage_title">Mass Storage (UMS)</string>
     <string name="usb_mass_storage_summary">Lets you transfer files between your computer and SD card by mounting it as a flash device</string>
     <string name="storage_rescan_media">Rescan media for the storage volume</string>
     <string name="storage_rescan_media_complete">Scan completed</string>
@@ -955,8 +955,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="gps_download_data_wifi_only">Download GPS assisted data only over Wi-Fi networks</string>
 
     <!-- CM Legal -->
-    <string name="cmlicense_title">CyanogenMod Legal</string>
-    <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
+    <string name="cmlicense_title">SOKP Legal</string>
+    <string name="settings_cmlicense_activity_title">SOKP Legal</string>
     <string name="settings_cmlicense_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
 
     <!-- Stylus Icon -->
@@ -964,7 +964,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="stylus_icon_enabled_summary">Show the pointer icon when hovering or drawing with the stylus</string>
 
     <!-- Stylus Gestures -->
-    <string name="gestures_settings_title">Stylus gestures</string>
+    <string name="gestures_settings_title">Stylus Gestures</string>
     <string name="category_spen_title">Stylus gestures</string>
     <string name="enable_subcat_title">Stylus</string>
     <string name="enable_spen_title_head">Enable gestures</string>
@@ -978,7 +978,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="gestures_double_spen_title_head">Double tap</string>
 
     <!-- Gestures Options -->
-    <string name="gestures_action_empty">No action</string>
+    <string name="gestures_action_empty">No Action</string>
     <string name="gestures_action_home">Home</string>
     <string name="gestures_action_back">Back</string>
     <string name="gestures_action_menu">Menu</string>
@@ -989,7 +989,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="stylus_app_not_installed">%s is not installed</string>
 
     <!-- Whether to display IME switcher notifcation -->
-    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify">Selector Notification</string>
     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 
     <!-- App ops -->
@@ -1102,7 +1102,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="app_ops_both_count">Allowed <xliff:g id="count">%1$s</xliff:g>, denied <xliff:g id="count">%2$s</xliff:g></string>
 
     <!-- App ops menu options -->
-    <string name="app_ops_show_user_apps">Show user apps</string>
+    <string name="app_ops_show_user_apps">Show User Apps</string>
     <string name="app_ops_show_system_apps">Show built-in apps</string>
     <string name="app_ops_reset_counters">Reset allow/deny counters</string>
     <string name="app_ops_reset_confirm_title">Confirm counters reset</string>
@@ -1136,7 +1136,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="autoperf_summary">Automatically choose an appropriate performance profile for various applications</string>
 
     <!-- Performance menu, graphics options category -->
-    <string name="graphics_title">Graphics and rendering</string>
+    <string name="graphics_title">Graphics and Rendering</string>
 
     <!-- Ad-hoc (IBSS) networks -->
     <string name="wifi_mode">Mode</string>
@@ -1147,7 +1147,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="wifi_mhz">MHz</string>
 
     <!-- Voice Wakeup -->
-    <string name="voice_wakeup_settings_title">Voice wakeup</string>
+    <string name="voice_wakeup_settings_title">Voice Wakeup</string>
     <string name="voice_wakeup_retrain_title">Retrain your voice</string>
     <string name="voice_wakeup_activity_title">Activity to launch</string>
     <string name="voice_wakeup_default_activity">Google Now</string>
@@ -1178,7 +1178,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="bluetooth_accept_all_files">Accept all file types</string>
 
     <!-- Automatic performance profiles -->
-    <string name="autoperf_title">Enable per-app profiles</string>
+    <string name="autoperf_title">Enable Per-App Profiles</string>
     <string name="autoperf_summary">Automatically choose an appropriate performance profile for various applications</string>
 
     <!-- Performance menu, graphics options category -->

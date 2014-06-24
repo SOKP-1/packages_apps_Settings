@@ -19,28 +19,11 @@
     android:title="@string/notification_drawer_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceScreen
-            android:key="heads_up"
-            android:fragment="com.android.settings.headsup.HeadsUpDoNotDisturbSettings"
-            android:title="@string/category_heads_up" />
-
      <Preference
          android:fragment="com.android.settings.spirit.NotificationDrawerStyle"
          android:key="notification_style"
          android:title="@string/notification_style_title"
          android:summary="@string/notification_style_summary" />
-
-    <PreferenceScreen
-             android:key="slim_notification_shortcuts"
-             android:fragment="com.android.settings.slim.dslv.ButtonsListViewSettings"
-             android:summary="@string/notification_shortcuts_settings_summary"
-             android:title="@string/notification_shortcuts_settings_title">
-         <extra android:name="buttonMode" android:value="5" />
-         <extra android:name="maxAllowedButtons" android:value="16" />
-         <extra android:name="disableLongpress" android:value="true" />
-         <extra android:name="useAppPickerOnly" android:value="true" />
-         <extra android:name="fragment" android:value="com.android.settings.slim.fragments.NotificationsShortcutFragment" />
-     </PreferenceScreen>
 
     <ListPreference
         android:key="notification_drawer_collapse_on_dismiss"
