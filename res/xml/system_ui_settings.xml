@@ -33,7 +33,7 @@
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.namakerorin.audiofxwidget"
             android:targetClass="com.namakerorin.audiofxwidget.Settings" />
-            </Preference>
+            
 
 	
        <PreferenceScreen
@@ -43,7 +43,7 @@
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.krabappel2548.dolbymobile"
             android:targetClass="com.krabappel2548.dolbymobile.main" />
-           </Preference>
+           
 
            </PreferenceCategory>
            
