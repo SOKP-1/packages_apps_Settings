@@ -24,6 +24,28 @@
         android:layout="@layout/sokp_rom_logo" />
 	
     <PreferenceCategory
+        android:title="@string/the_dts"/>
+        
+        <PreferenceScreen
+        android:id="@+id/fx_audio"
+        android:title="@string/audio_fx">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.namakerorin.audiofxwidget"
+            android:targetClass="com.namakerorin.audiofxwidget.Settings" />
+            </PreferenceScreen>
+
+
+       <PreferenceScreen
+        android:id="@+id/dolby_id"
+        android:title="@string/dolby">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.krabappel2548.dolbymobile"
+            android:targetClass="com.krabappel2548.dolbymobile.main" />
+           </PreferenceScreen>
+
+      <PreferenceCategory
         android:title="@string/system_ui_cat_general"/>
 
         <PreferenceScreen
@@ -45,11 +67,11 @@
              android:key="slim_notification_shortcuts"
              android:fragment="com.android.settings.slim.dslv.ButtonsListViewSettings"
              android:title="@string/notification_shortcuts_settings_title">
-          <extra android:name="buttonMode" android:value="5" />
-          <extra android:name="maxAllowedButtons" android:value="16" />
-          <extra android:name="disableLongpress" android:value="true" />
-          <extra android:name="useAppPickerOnly" android:value="true" />
-          <extra android:name="fragment" android:value="com.android.settings.slim.fragments.NotificationsShortcutFragment" />
+             <extra android:name="buttonMode" android:value="5" />
+             <extra android:name="maxAllowedButtons" android:value="16" />
+             <extra android:name="disableLongpress" android:value="true" />
+             <extra android:name="useAppPickerOnly" android:value="true" />
+             <extra android:name="fragment" android:value="com.android.settings.slim.fragments.NotificationsShortcutFragment" />
         </PreferenceScreen>
 		
         <PreferenceScreen
@@ -118,6 +140,20 @@
             android:fragment="com.android.settings.cyanogenmod.fragments.WakeLockBlocker"
             android:title="@string/wakelock_blocker"
             android:summary="@string/wakelock_blocker_header_summary" />
+
+		<PreferenceScreen
+            android:key="slimsizer"
+            android:fragment="com.android.settings.spirit.SlimSizer"
+            android:title="@string/sizer_title" />	
+			
+         <PreferenceScreen
+          android:id="@+id/gps_fix_id"
+          android:title="@string/gps_fix">
+          <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aosb.gps"
+            android:targetClass="com.aosb.gps.GPSCountryChangerInterface" />
+         </PreferenceScreen>
 
     <!-- Device Specific Touchscreen gestures. Avoid duplicating CMHW functionality, please -->
     <Preference
