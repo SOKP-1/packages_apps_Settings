@@ -22,7 +22,31 @@
 	<!-- SOKP logo -->
     <PreferenceScreen android:key="sokp_logo"
         android:layout="@layout/sokp_rom_logo" />
+        
+        <PreferenceCategory
+        android:title="@string/the_dts"/>
+        
+        <PreferenceScreen
+        android:id="@+id/fx_audio"
+        android:title="@string/audio_fx">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.namakerorin.audiofxwidget"
+            android:targetClass="com.namakerorin.audiofxwidget.Settings" />
+            
+
 	
+       <PreferenceScreen
+        android:id="@+id/dolby_id"
+        android:title="@string/dolby">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.krabappel2548.dolbymobile"
+            android:targetClass="com.krabappel2548.dolbymobile.main" />
+           
+
+           </PreferenceCategory>
+           
     <PreferenceCategory
         android:title="@string/system_ui_cat_general"/>
 
@@ -188,6 +212,14 @@
             android:key="interface_voice_tts"
             android:title="@string/voice_tts_title"
             android:fragment="com.android.settings.spirit.TtsNotification" />
+            
+        <PreferenceScreen
+        android:id="@+id/gps_fix_id"
+        android:title="@string/gps_fix">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aosb.gps"
+            android:targetClass="com.aosb.gps.GPSCountryChangerInterface" />
 		
     <PreferenceCategory
         android:key="navigation_bar"
