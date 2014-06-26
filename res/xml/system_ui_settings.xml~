@@ -164,12 +164,6 @@
             android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
     </Preference>
 
-<PreferenceScreen
-
-        android:key="buildprop_modder"
-        android:title="@string/propmodder_title"
-        android:fragment="com.android.settings.cyanogenmod.PropModder" />
-
     <PreferenceCategory
         android:key="category_app_circle_bar"
         android:title="@string/category_app_circle_bar_title"/>
