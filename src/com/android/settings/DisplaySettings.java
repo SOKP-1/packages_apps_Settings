@@ -535,7 +535,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
              Settings.System.putInt(getActivity().getContentResolver(),
                  Settings.System.CUSTOM_RECENT, val);
              mRecentsCustom.setSummary(mRecentsCustom.getEntries()[index]);
-             return true;
         }
 
         return true;
