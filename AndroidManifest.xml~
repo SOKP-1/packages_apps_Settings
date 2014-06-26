@@ -228,11 +228,7 @@
 
                 <category android:name="com.carbon.settings.SHORTCUT" />
             </intent-filter>
-        </activity>
-
-        <!--  Configurable init.d  -->
-
-	<activity android:name=".initD" />	
+        </activity>	
 
         <!--  Configurable BuildProp  -->
 
