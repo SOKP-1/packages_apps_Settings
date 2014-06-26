@@ -1,6 +1,3 @@
-
-New (n)Fork (f)Raw (r)Copy URL (cmd+c)
-Please note that all pasted data is publicly available.
 /*
  * Copyright (C) 2010 The Android Open Source Project
  *
@@ -16,11 +13,11 @@ Please note that all pasted data is publicly available.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 package com.android.settings;
- 
+
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
- 
+
 import android.app.ActivityManagerNative;
 import android.app.Dialog;
 import android.app.admin.DevicePolicyManager;
@@ -47,7 +44,7 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
- 
+
 import android.view.WindowManagerGlobal;
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.DreamSettings;
@@ -55,19 +52,19 @@ import com.android.settings.Utils;
 import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.hardware.DisplayColor;
 import com.android.settings.hardware.DisplayGamma;
- 
+
 import org.cyanogenmod.hardware.AdaptiveBacklight;
 import org.cyanogenmod.hardware.TapToWake;
- 
+
 import java.util.ArrayList;
- 
+
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, OnPreferenceClickListener {
     private static final String TAG = "DisplaySettings";
- 
+
     /** If there is no setting in the provider, use this. */
     private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 30000;
- 
+
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_FONT_SIZE = "font_size";
@@ -76,8 +73,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
     private static final String KEY_ADVANCED_DISPLAY_SETTINGS = "advanced_display_settings";
     private static final String KEY_TAP_TO_WAKE = "double_tap_wake_gesture";
-    private static final String KEY_CUSTOM_RECENT = "custom_recent_mode";
- 
+
     private static final String CATEGORY_ADVANCED = "advanced_display_prefs";
     private static final String CATEGORY_DISPLAY = "display_prefs";
     private static final String CATEGORY_LIGHTS = "lights_prefs";
@@ -87,35 +83,35 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_DISPLAY_COLOR = "color_calibration";
     private static final String KEY_DISPLAY_GAMMA = "gamma_tuning";
     private static final String KEY_SCREEN_COLOR_SETTINGS = "screencolor_settings";
- 
+    private static final String KEY_CUSTOM_RECENT = "custom_recent_mode";
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
- 
+
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String CATEGORY_EXPANDED_DESKTOP = "expanded_desktop_category";
- 
+    private ListPreference mRecentsCustom;
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
- 
+
     private CheckBoxPreference mAccelerometer;
     private FontDialogPreference mFontSizePref;
     private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
- 
+
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
     private PreferenceScreen mDisplayRotationPreference;
     private PreferenceScreen mScreenColorSettings;
- 
+
     private final Configuration mCurConfig = new Configuration();
- 
+
     private ListPreference mScreenTimeoutPreference;
     private Preference mScreenSaverPreference;
- 
+
     private CheckBoxPreference mAdaptiveBacklight;
     private CheckBoxPreference mTapToWake;
- 
-    private ListPreference mRecentsCustom;
- 
+
+
+
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
         @Override
@@ -123,7 +119,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             updateDisplayRotationPreferenceDescription();
         }
     };
- 
+
     private final RotationPolicy.RotationPolicyListener mRotationPolicyListener =
             new RotationPolicy.RotationPolicyListener() {
         @Override
@@ -131,31 +127,31 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             updateDisplayRotationPreferenceDescription();
         }
     };
- 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ContentResolver resolver = getActivity().getContentResolver();
         Resources res = getResources();
- 
+
         addPreferencesFromResource(R.xml.display_settings);
- 
+
         PreferenceCategory displayPrefs = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
- 
+
         PreferenceCategory expandedCategory =
                 (PreferenceCategory) findPreference(CATEGORY_EXPANDED_DESKTOP);
- 
+
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
         mExpandedDesktopNoNavbarPref =
                 (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
- 
+
         int expandedDesktopValue = Settings.System.getInt(getContentResolver(),
                 Settings.System.EXPANDED_DESKTOP_STYLE, 0);
- 
+
         try {
             boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar();
- 
+
             if (hasNavBar) {
                 mExpandedDesktopPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
@@ -170,16 +166,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
         }
- 
+
         mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
- 
+
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
                 && getResources().getBoolean(
                         com.android.internal.R.bool.config_dreamsSupported) == false) {
             displayPrefs.removePreference(mScreenSaverPreference);
         }
- 
+
         mScreenTimeoutPreference = (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
         final long currentTimeout = Settings.System.getLong(resolver, SCREEN_OFF_TIMEOUT,
                 FALLBACK_SCREEN_TIMEOUT_VALUE);
@@ -188,53 +184,53 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         disableUnusableTimeouts(mScreenTimeoutPreference);
         updateTimeoutPreferenceDescription(currentTimeout);
         updateDisplayRotationPreferenceDescription();
- 
+
         mFontSizePref = (FontDialogPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
         mFontSizePref.setOnPreferenceClickListener(this);
- 
+
         PreferenceCategory advancedPrefs = (PreferenceCategory) findPreference(CATEGORY_ADVANCED);
- 
+
         mAdaptiveBacklight = (CheckBoxPreference) findPreference(KEY_ADAPTIVE_BACKLIGHT);
         if (!isAdaptiveBacklightSupported()) {
             advancedPrefs.removePreference(mAdaptiveBacklight);
             mAdaptiveBacklight = null;
         }
- 
+
         mTapToWake = (CheckBoxPreference) findPreference(KEY_TAP_TO_WAKE);
         if (!isTapToWakeSupported()) {
             advancedPrefs.removePreference(mTapToWake);
             mTapToWake = null;
         }
- 
- 
+
+
         Utils.updatePreferenceToSpecificActivityFromMetaDataOrRemove(getActivity(),
                 advancedPrefs, KEY_ADVANCED_DISPLAY_SETTINGS);
- 
+
         mWakeWhenPluggedOrUnplugged =
                 (CheckBoxPreference) findPreference(KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED);
- 
+
         mScreenColorSettings = (PreferenceScreen) findPreference(KEY_SCREEN_COLOR_SETTINGS);
         if (!isPostProcessingSupported()) {
             advancedPrefs.removePreference(mScreenColorSettings);
         }
- 
+
         boolean hasNotificationLed = res.getBoolean(
                 com.android.internal.R.bool.config_intrusiveNotificationLed);
         boolean hasBatteryLed = res.getBoolean(
                 com.android.internal.R.bool.config_intrusiveBatteryLed);
         PreferenceCategory lightPrefs = (PreferenceCategory) findPreference(CATEGORY_LIGHTS);
- 
+
         if (hasNotificationLed || hasBatteryLed) {
             mBatteryPulse = (PreferenceScreen) findPreference(KEY_BATTERY_LIGHT);
             mNotificationPulse = (PreferenceScreen) findPreference(KEY_NOTIFICATION_PULSE);
- 
+
             // Battery light is only for primary user
             if (UserHandle.myUserId() != UserHandle.USER_OWNER || !hasBatteryLed) {
                 lightPrefs.removePreference(mBatteryPulse);
                 mBatteryPulse = null;
             }
- 
+
             if (!hasNotificationLed) {
                 lightPrefs.removePreference(mNotificationPulse);
                 mNotificationPulse = null;
@@ -242,38 +238,37 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(lightPrefs);
         }
- 
+
         if (!DisplayColor.isSupported()) {
             advancedPrefs.removePreference(findPreference(KEY_DISPLAY_COLOR));
         }
         if (!DisplayGamma.isSupported()) {
             advancedPrefs.removePreference(findPreference(KEY_DISPLAY_GAMMA));
         }
- 
         // Custom Recent.
-        mRecentsCustom = (ListPreference) findPreference(KEY_CUSTOM_RECENT);
-        long recent_state = Settings.System.getLong(getContentResolver(),
-                Settings.System.CUSTOM_RECENT, 0);
-        mRecentsCustom.setValue(String.valueOf(recent_state));
-        mRecentsCustom.setSummary(mRecentsCustom.getEntry());
-        mRecentsCustom.setOnPreferenceChangeListener(this);
+         mRecentsCustom = (ListPreference) findPreference(KEY_CUSTOM_RECENT);
+         long recent_state = Settings.System.getLong(getContentResolver(),
+                 Settings.System.CUSTOM_RECENT, 0);
+         mRecentsCustom.setValue(String.valueOf(recent_state));
+         mRecentsCustom.setSummary(mRecentsCustom.getEntry());
+         mRecentsCustom.setOnPreferenceChangeListener(this);
     }
- 
+
     private void updateDisplayRotationPreferenceDescription() {
         if (mDisplayRotationPreference == null) {
             // The preference was removed, do nothing
             return;
         }
- 
+
         // We have a preference, lets update the summary
         boolean rotationEnabled = Settings.System.getInt(getContentResolver(),
                 Settings.System.ACCELEROMETER_ROTATION, 0) != 0;
- 
+
         if (!rotationEnabled) {
             mDisplayRotationPreference.setSummary(R.string.display_rotation_disabled);
             return;
         }
- 
+
         StringBuilder summary = new StringBuilder();
         int mode = Settings.System.getInt(getContentResolver(),
                 Settings.System.ACCELEROMETER_ROTATION_ANGLES,
@@ -282,7 +277,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 | DisplayRotation.ROTATION_270_MODE);
         ArrayList<String> rotationList = new ArrayList<String>();
         String delim = "";
- 
+
         if ((mode & DisplayRotation.ROTATION_0_MODE) != 0) {
             rotationList.add("0");
         }
@@ -306,7 +301,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         summary.append(" " + getString(R.string.display_rotation_unit));
         mDisplayRotationPreference.setSummary(summary);
     }
- 
+
     private void updateTimeoutPreferenceDescription(long currentTimeout) {
         ListPreference preference = mScreenTimeoutPreference;
         String summary;
@@ -332,7 +327,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         preference.setSummary(summary);
     }
- 
+
     private void disableUnusableTimeouts(ListPreference screenTimeoutPreference) {
         final DevicePolicyManager dpm =
                 (DevicePolicyManager) getActivity().getSystemService(
@@ -373,52 +368,52 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         screenTimeoutPreference.setEnabled(revisedEntries.size() > 0);
     }
- 
+
     @Override
     public void onResume() {
         super.onResume();
         updateDisplayRotationPreferenceDescription();
- 
+
         RotationPolicy.registerRotationPolicyListener(getActivity(),
                 mRotationPolicyListener);
- 
+
         final ContentResolver resolver = getContentResolver();
- 
+
         // Display rotation observer
         resolver.registerContentObserver(
                 Settings.System.getUriFor(Settings.System.ACCELEROMETER_ROTATION), true,
                 mAccelerometerRotationObserver);
- 
+
         if (mAdaptiveBacklight != null) {
             mAdaptiveBacklight.setChecked(AdaptiveBacklight.isEnabled());
         }
- 
+
         if (mTapToWake != null) {
             mTapToWake.setChecked(TapToWake.isEnabled());
         }
- 
+
         // Default value for wake-on-plug behavior from config.xml
         boolean wakeUpWhenPluggedOrUnpluggedConfig = getResources().getBoolean(
                 com.android.internal.R.bool.config_unplugTurnsOnScreen);
- 
+
         mWakeWhenPluggedOrUnplugged.setChecked(Settings.Global.getInt(resolver,
                 Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
                 (wakeUpWhenPluggedOrUnpluggedConfig ? 1 : 0)) == 1);
- 
+
         updateState();
     }
- 
+
     @Override
     public void onPause() {
         super.onPause();
- 
+
         RotationPolicy.unregisterRotationPolicyListener(getActivity(),
                 mRotationPolicyListener);
- 
+
         // Display rotation observer
         getContentResolver().unregisterContentObserver(mAccelerometerRotationObserver);
     }
- 
+
     @Override
     public Dialog onCreateDialog(int dialogId) {
         if (dialogId == DLG_GLOBAL_CHANGE_WARNING) {
@@ -432,21 +427,21 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         return null;
     }
- 
+
     private void updateState() {
         readFontSizePreference(mFontSizePref);
         updateScreenSaverSummary();
         updateLightPulseSummary();
         updateBatteryPulseSummary();
     }
- 
+
     private void updateScreenSaverSummary() {
         if (mScreenSaverPreference != null) {
             mScreenSaverPreference.setSummary(
                     DreamSettings.getSummaryTextWithDreamName(getActivity()));
         }
     }
- 
+
     private void updateLightPulseSummary() {
         if (mNotificationPulse != null) {
             if (Settings.System.getInt(getActivity().getContentResolver(),
@@ -457,7 +452,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
     }
- 
+
     private void updateBatteryPulseSummary() {
         if (mBatteryPulse != null) {
             if (Settings.System.getInt(getActivity().getContentResolver(),
@@ -468,7 +463,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
     }
- 
+
     /**
      * Reads the current font size and sets the value in the summary text
      */
@@ -478,13 +473,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } catch (RemoteException e) {
             Log.w(TAG, "Unable to retrieve font size");
         }
- 
+
         // report the current size in the summary text
         final Resources res = getResources();
         String fontDesc = FontDialogPreference.getFontSizeDescription(res, mCurConfig.fontScale);
         pref.setSummary(getString(R.string.summary_font_size, fontDesc));
     }
- 
+
     public void writeFontSizePreference(Object objValue) {
         try {
             mCurConfig.fontScale = Float.parseFloat(objValue.toString());
@@ -493,7 +488,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Log.w(TAG, "Unable to save font size");
         }
     }
- 
+
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mAdaptiveBacklight) {
@@ -508,7 +503,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
- 
+
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
@@ -520,7 +515,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             updateExpandedDesktop(value ? 2 : 0);
         }
- 
+
         if (KEY_SCREEN_TIMEOUT.equals(key)) {
             int value = Integer.parseInt((String) objValue);
             try {
@@ -532,20 +527,20 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
-        }
- 
+        } 
+        
         if (preference == mRecentsCustom) {
-            int val = Integer.parseInt((String) objValue);
-            int index = mRecentsCustom.findIndexOfValue((String) objValue);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.System.CUSTOM_RECENT, val);
-            mRecentsCustom.setSummary(mRecentsCustom.getEntries()[index]);
-            return true;
+             int val = Integer.parseInt((String) objValue);
+             int index = mRecentsCustom.findIndexOfValue((String) objValue);
+             Settings.System.putInt(getActivity().getContentResolver(),
+                 Settings.System.CUSTOM_RECENT, val);
+             mRecentsCustom.setSummary(mRecentsCustom.getEntries()[index]);
+             return true;
         }
- 
+
         return true;
     }
- 
+
     @Override
     public boolean onPreferenceClick(Preference preference) {
         if (preference == mFontSizePref) {
@@ -558,7 +553,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         return false;
     }
- 
+
     /**
      * Restore the properties associated with this preference on boot
      * @param ctx A valid context
@@ -583,7 +578,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
     }
- 
+
     private boolean isPostProcessingSupported() {
         boolean ret = true;
         final PackageManager pm = getPackageManager();
@@ -594,7 +589,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         return ret;
     }
- 
+
     private static boolean isAdaptiveBacklightSupported() {
         try {
             return AdaptiveBacklight.isSupported();
@@ -603,7 +598,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             return false;
         }
     }
- 
+
     private static boolean isTapToWakeSupported() {
         try {
             return TapToWake.isSupported();
@@ -612,14 +607,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             return false;
         }
     }
- 
+
     private void updateExpandedDesktop(int value) {
         ContentResolver cr = getContentResolver();
         Resources res = getResources();
         int summary = -1;
- 
+
         Settings.System.putInt(cr, Settings.System.EXPANDED_DESKTOP_STYLE, value);
- 
+
         if (value == 0) {
             // Expanded desktop deactivated
             Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 0);
@@ -632,9 +627,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(cr, Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED, 1);
             summary = R.string.expanded_desktop_no_status_bar;
         }
- 
+
         if (mExpandedDesktopPref != null && summary != -1) {
             mExpandedDesktopPref.setSummary(res.getString(summary));
         }
     }
-}    
+}
