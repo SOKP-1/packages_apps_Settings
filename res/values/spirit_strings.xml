@@ -1272,4 +1272,13 @@
     <string name="custom_statusbar_header_title">Contextual notification panel header</string>
     <string name="custom_statusbar_header_summary">Sets the background of the notification panel header to an image based on the current date and time</string>
 
+    <!-- Weather -->
+    <string name="weather_settings_title">Weather</string>
+    <string name="weather_alert_title">Weather warning</string>
+    <string name="weather_alert_message">Phone will now reboot\nto apply changes!</string>
+    <string name="weather_header_title">Weather header</string>
+    <string name="weather_header_summary">Add a small weather\ninfo in statusbar header.</string>
+    <string name="weather_notification_title">Weather notification</string>
+    <string name="weather_notification_summary">Add weather info as notification</string>
+
 </resources>
