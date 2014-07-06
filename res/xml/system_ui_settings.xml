@@ -45,6 +45,15 @@
             android:targetClass="com.krabappel2548.dolbymobile.main" />
            </PreferenceScreen>
 
+      <PreferenceScreen
+        android:id="@+id/sokp_stats"
+        android:title="@string/sokp_stats">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="android.romstats"
+            android:targetClass="android.romstats.AnonymousStats" />
+            </PreferenceScreen>
+
       <PreferenceCategory
         android:title="@string/system_ui_cat_general"/>
 

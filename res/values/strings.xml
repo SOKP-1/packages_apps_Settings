@@ -5012,5 +5012,7 @@
     <string name="audio_fx">Audio FX</string>
     <string name="dolby">Dolby Digital</string>
     <string name="gps_fix">GPS Optimizer</string>
+    <string name="sokp_stats">SOKP Statistics</string>
+
 
 </resources>
