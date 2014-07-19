@@ -1145,9 +1145,6 @@
     <string name="clock_font_light_italic">Light italic</string>
     <string name="clock_font_normal">Normal</string>
 
-    <!-- Performance control -->
-    <string name="performance_settings">Performance Control</string>
-
     <!-- Navbar Toggle QS -->
     <string name="title_navbar_tile">Navbar Toggle</string>
 
