@@ -13,7 +13,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="yes" msgid="4676390750360727396">"Tak"</string>
@@ -2043,4 +2042,40 @@
     <string name="user_image_take_photo" msgid="1280274310152803669">"Zrób zdjęcie"</string>
     <string name="user_image_choose_photo" msgid="7940990613897477057">"Wybierz zdjęcie z galerii"</string>
     <string name="regulatory_info_text" msgid="5623087902354026557"></string>
+	
+    <string name="screencolor_save">Zapisz</string>
+    <string name="screencolor_cancel">Anuluj</string>
+    <string name="previous_str">Poprzedni</string>
+    <string name="new_str">Nowy</string>
+    <string name="restore_preview">Pokaż domyślny obraz</string>
+    <string name="selectnewfile_menu">Wybierz nowy obraz z Galerii</string>
+    <string name="selectfile_menu">Wybierz obraz z Galerii</string>
+    <string name="restore_default_str">Reset</string>
+    <string name="hue_str">Barwa: <xliff:g id="hue_value">%1$s</xliff:g></string>
+    <string name="saturation_str">Nasycenie: <xliff:g id="saturation_value">%1$s</xliff:g></string>
+    <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
+    <string name="intensity_str">Intensywność: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Nagrywanie ekranu</string>
+    <string name="screen_recorder_summary">Dostosuj ustawienia nagrywania ekranu</string>
+    <string name="screen_recorder_info_title">OSTRZEŻENIE!</string>
+    <string name="screen_recorder_info_summary">Nagrywanie ekranu jest dedykowane dla urządzeń z 1 GB RAMu lub więcej. Jeżeli twoje urządzenie jest mało wydajne, używasz tej funkcji na własne ryzyko!</string>
+    <string name="screen_recorder_video_dimensions_title">Rozmiar wideo</string>
+    <string name="screen_recorder_video_bitrate_title">Bitrate</string>
+    <string name="screen_recorder_record_audio_title">Nagrywaj dźwięk</string>
+    <string name="screen_recorder_record_audio_summary">Nagrywa dźwięk z mikrofonu</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Zachowanie MediaScanner\'a przy uruchomieniu</string>
+    <string name="media_scanner_on_boot_enabled">Skanuj media</string>
+    <string name="media_scanner_on_boot_ask">Zapytaj o skanowanie (powiadomienie)</string>
+    <string name="media_scanner_on_boot_disabled">Nie skanuj mediów</string>
+
+	<!-- Audio System -->
+    <string name="the_dts">System audio</string>
+    <string name="audio_fx">Audio FX</string>
+    <string name="dolby">Dolby Digital</string>
+    <string name="gps_fix">Optymalizator GPS</string>
+    <string name="sokp_stats">Statystyki SOKP</string>
 </resources>
