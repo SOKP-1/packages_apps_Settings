@@ -2067,7 +2067,7 @@
     <string name="screen_recorder_record_audio_summary">Nagrywa dźwięk z mikrofonu</string>
 
     <!-- MediaScanner behavior on boot -->
-    <string name="media_scanner_on_boot_title">Zachowanie MediaScanner'a przy uruchomieniu</string>
+    <string name="media_scanner_on_boot_title">Zachowanie MediaScanner\'a przy uruchomieniu</string>
     <string name="media_scanner_on_boot_enabled">Skanuj media</string>
     <string name="media_scanner_on_boot_ask">Zapytaj o skanowanie (powiadomienie)</string>
     <string name="media_scanner_on_boot_disabled">Nie skanuj mediów</string>
