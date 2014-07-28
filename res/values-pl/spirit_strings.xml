@@ -1316,4 +1316,6 @@
     <string name="animation_no_scroll_summary_on">Włączone</string>
     <string name="animation_no_scroll_summary_off">Wyłączone</string>
     <string name="scroll_disclaimer_summary">Notatka: Większość aplikacji musi zostać uruchomiona ponownie zanim zmiany zostaną przyjęte.</string>
+    
+    <string name="battery_around_lockscreen_ring">Bateria do okoła pierścienia</string> <!-- THERE IS NO SUCH ENTRY IN OFFICIAL CM STRINGS! -->
 </resources>
