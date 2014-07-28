@@ -1296,15 +1296,6 @@
     <string name="power_saver_toggles_cpu_summary">Oszczędzaj użycie CPU</string>
 
     <!-- Scrolling Animation Controls -->
-    <string name="animation_fling_velocity_title">Prędkość przelotu</string>
-    <string name="animation_scroll_friction_title">Frykcja przewijania</string>
-    <string name="animation_overscroll_distance_title">Dystans nadprzewijania</string>
-    <string name="animation_overfling_distance_title">Dystans przelotu</string>
-    <string name="animation_duration_summary">Czas trwania</string>
-    <string name="animation_no_scroll_title">Dostosowywanie przewijania</string>
-    <string name="animation_no_scroll_summary_on">Włączone</string>
-    <string name="animation_no_scroll_summary_off">Wyłączone</string>
-    
     <string name="scrolling_title">Animacje przewijania</string>
     <string name="scrolling_summary">Przeglądaj lub zmień animacje przewijania</string>
     <string name="animation_fling_velocity_title">Prędkość przelotu</string>
